@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Inlämningsuppgift Javascript</title>
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Press any key, I dare you!</h1>
+    <div id="keyDown"></div>
+
+    <script>
+        addEventListener("keydown", (event) =>
+        document.getElementById("keyDown").innerHTML = "You pressed " + event.key + ".");
+    </script>
+</body>
